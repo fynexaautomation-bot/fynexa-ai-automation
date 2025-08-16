@@ -1,1 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Book a Free Automation Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">PR⚡AISE</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="education.html">Education</a>
+    <a class="active" href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section hero hero-compact">
+    <div class="container narrow">
+      <p class="eyebrow">Get started</p>
+      <h1>Book your free automation demo</h1>
+      <p class="sub">Tell me your workflow. I’ll wire one automation end‑to‑end so you can feel the time savings.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container form-grid">
+      <!--
+        FORMS ON GITHUB PAGES (no backend):
+        1) Create a free Formspree form and replace /f/your_form_id below.
+        2) Or swap this form with your JotForm/Google Form embed.
+      -->
+      <form class="card form" action="https://formspree.io/f/your_form_id" method="POST">
+        <label>
+          Name
+          <input required type="text" name="name" placeholder="Jane Realtor" />
+        </label>
+        <label>
+          Email
+          <input required type="email" name="email" placeholder="jane@brokerage.com" />
+        </label>
+        <label>
+          Phone (optional)
+          <input type="tel" name="phone" placeholder="+1 (555) 555-5555" />
+        </label>
+        <label>
+          What do you want to automate?
+          <textarea required name="message" rows="5" placeholder="Lead capture, follow-ups, scheduling, etc."></textarea>
+        </label>
+        <button class="btn btn-primary" type="submit">Request demo</button>
+        <p class="muted tiny">By submitting, you agree to be contacted about this request.</p>
+      </form>
+
+      <aside class="card contact-side">
+        <h3>Prefer a quick call?</h3>
+        <p><a class="chip" href="#" aria-disabled="true">Calendly link (add yours)</a></p>
+        <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
+        <p>Twitter: <a href="#" target="_blank">@yourhandle</a></p>
+        <hr>
+        <h4>What happens next</h4>
+        <ol>
+          <li>We pick one workflow (15 min).</li>
+          <li>I build it and plug in your tools.</li>
+          <li>You test it with real leads—free.</li>
+        </ol>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <a class="logo">PR⚡AISE</a>
+    <nav class="footer-nav">
+      <a href="services.html">Services</a>
+      <a href="education.html">Education</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </div>
+  <p class="copyright">© <span id="y"></span> Praise</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
 
