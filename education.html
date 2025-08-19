@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI in Real Estate — Education</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="site-header">
+   <a class="logo" href="/">
+  <img src="assets/fynexa-logo-white.png" alt="Fynexa Logo" style="height:60px;">
+</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a class="active" href="education.html">Education</a>
+    <a href="contact.html" class="btn btn-primary">Book a Free Demo</a>
+  </nav>
+</header>
+
+<main>
+  <section class="section hero hero-compact">
+    <div class="container narrow">
+      <p class="eyebrow">Education Hub</p>
+      <h1>AI in Real Estate: work smarter, not longer.</h1>
+      <p class="sub">Short, practical lessons built for busy agents. No fluff. Copy‑paste playbooks you can use today.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container narrow">
+      <!-- Search Bar -->
+      <input type="text" id="search-bar" placeholder="Search topics..." />
+
+      <!-- Cards Grid -->
+      <div class="cards-grid">
+        <div class="card" data-topic="lead generation">
+          <img src="media/lead-gen.jpg" alt="Lead Generation">
+          <h3>Lead Generation with AI</h3>
+          <p>Capture leads everywhere: website, social media, QR codes...</p>
+          <button class="read-more">Read More</button>
+        </div>
+        <div class="card" data-topic="follow-ups">
+          <img src="media/follow-ups.jpg" alt="AI Follow-Ups">
+          <h3>AI-Powered Follow-Ups</h3>
+          <p>Instant replies, personalized messages, sequences stop on reply...</p>
+          <button class="read-more">Read More</button>
+        </div>
+        <div class="card" data-topic="appointment scheduling">
+          <img src="media/appointments.jpg" alt="Appointments">
+          <h3>Appointment Scheduling</h3>
+          <p>Let prospects pick a time that works. Sync to Google Calendar, add buffers...</p>
+          <button class="read-more">Read More</button>
+        </div>
+        <div class="card" data-topic="listing descriptions">
+          <img src="media/listings.jpg" alt="Listing Descriptions">
+          <h3>Listing Descriptions with AI</h3>
+          <p>Feed the property facts; get MLS-safe copy + social captions...</p>
+          <button class="read-more">Read More</button>
+        </div>
+        <div class="card" data-topic="market reports">
+          <img src="media/market-reports.jpg" alt="CMA & Market Reports">
+          <h3>CMA + Market Reports</h3>
+          <p>Compile comps, trends, and a clear narrative. Automate repetitive parts...</p>
+          <button class="read-more">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal / Floating Window -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 id="modal-title"></h2>
+      <div id="modal-media"></div>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <section class="section sticky-cta">
+    <div class="container flex-between">
+      <div>
+        <h3>Ready to try one in your workflow?</h3>
+        <p>I'll build your first automation free.</p>
+      </div>
+      <a class="btn btn-primary" href="contact.html">Book a demo</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <nav class="footer-nav">
+      <a href="services.html">Services</a>
+      <a href="education.html" class="active">Education</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <p class="copyright">© <span id="y"></span> Praise</p>
+</footer>
+
+<script>
+  // Search functionality
+  const searchBar = document.getElementById('search-bar');
+  const cards = document.querySelectorAll('.card');
+
+  searchBar.addEventListener('input', e => {
+    const term = e.target.value.toLowerCase();
+    cards.forEach(card => {
+      const topic = card.dataset.topic.toLowerCase();
+      card.style.display = topic.includes(term) ? 'block' : 'none';
+    });
+  });
+
+  // Modal functionality
+  const modal = document.getElementById('modal');
+  const modalTitle = document.getElementById('modal-title');
+  const modalMedia = document.getElementById('modal-media');
+  const modalText = document.getElementById('modal-text');
+
+  cards.forEach(card => {
+    card.querySelector('.read-more').addEventListener('click', () => {
+      modalTitle.innerText = card.querySelector('h3').innerText;
+      modalText.innerText = card.querySelector('p').innerText + ' (Full content goes here...)';
+      modalMedia.innerHTML = card.querySelector('img').outerHTML;
+      modal.style.display = 'block';
+    });
+  });
+
+  modal.querySelector('.close').addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  window.addEventListener('click', e => {
+    if(e.target == modal) modal.style.display = 'none';
+  });
+
+  // Update copyright year
+  document.getElementById('y').innerText = new Date().getFullYear();
+</script>
+</body>
+</html>
