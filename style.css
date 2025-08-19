@@ -131,3 +131,52 @@ body{
 .muted{color:var(--muted)}
 .copyright{text-align:center;color:var(--muted)}
 
+/* ====== Education Section Search Bar & Buttons ====== */
+
+/* Search Bar Styling */
+#search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,.18);
+  font-size: 1rem;
+  background: var(--card);
+  color: var(--text);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: all 0.2s ease;
+  margin-bottom: 24px;
+}
+
+#search-bar::placeholder {
+  color: var(--muted);
+}
+
+#search-bar:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(139,92,246,0.3);
+}
+
+/* Read More Buttons on Cards */
+.card .read-more {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #080812;
+  background: linear-gradient(45deg, var(--primary), var(--primary-2));
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(139,92,246,0.25);
+}
+
+.card .read-more:hover {
+  background: linear-gradient(45deg, #6d28d9, #0dd7f0);
+  box-shadow: 0 6px 18px rgba(139,92,246,0.35);
+}
