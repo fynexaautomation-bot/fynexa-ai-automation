@@ -78,13 +78,62 @@ body{
 .chip{display:inline-block;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.18);text-decoration:none;color:var(--text)}
 
 /* ====== Cards & grids ====== */
-.grid{display:grid;gap:18px}
-.cards-3{grid-template-columns:1fr}
-@media (min-width:760px){.cards-3{grid-template-columns:repeat(3,1fr)}}
-.card{
-  background:var(--card);border:1px solid rgba(255,255,255,.06);
-  padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)
+.grid{display:grid;gap:24px} /* slightly more spacing */
+.cards-3{
+  grid-template-columns:1fr;
+  justify-items: center; /* center cards for small screens */
 }
+@media (min-width:760px){ 
+  .cards-3{
+    grid-template-columns:repeat(3, 1fr); /* 3 cards per row on medium screens */
+  }
+}
+@media (min-width:1200px){ 
+  .cards-3{
+    grid-template-columns:repeat(3, 1fr); /* 3 cards per row on large screens */
+  }
+}
+
+.card{
+  background:var(--card);
+  border:1px solid rgba(255,255,255,.06);
+  padding:18px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width:100%;
+  max-width: 360px;  /* fixed width to make multiple cards per row */
+  min-height: 480px; /* vertically stretched, taller than square */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+}
+
+.card h3{
+  margin: 12px 0 8px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.card p{
+  font-size: 0.95rem;
+  text-align: center;
+  color: var(--muted);
+}
+
 .case header{display:flex;align-items:center;gap:10px}
 .case .tag{background:rgba(139,92,246,.25);color:#eae6ff;padding:4px 10px;border-radius:999px;font-size:12px}
 .quote{background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:18px}
@@ -131,52 +180,14 @@ body{
 .muted{color:var(--muted)}
 .copyright{text-align:center;color:var(--muted)}
 
-/* ====== Education Section Search Bar & Buttons ====== */
-
-/* Search Bar Styling */
-#search-bar {
-  width: 100%;
-  max-width: 400px;
-  padding: 12px 16px;
-  border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,.18);
-  font-size: 1rem;
-  background: var(--card);
-  color: var(--text);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-  transition: all 0.2s ease;
-  margin-bottom: 24px;
-}
-
-#search-bar::placeholder {
-  color: var(--muted);
-}
-
-#search-bar:focus {
-  outline: none;
-  border-color: var(--primary);
-  box-shadow: 0 4px 12px rgba(139,92,246,0.3);
-}
-
-/* Read More Buttons on Cards */
-.card .read-more {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 10px 18px;
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: #080812;
-  background: linear-gradient(45deg, var(--primary), var(--primary-2));
-  border: none;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(139,92,246,0.25);
-}
-
-.card .read-more:hover {
-  background: linear-gradient(45deg, #6d28d9, #0dd7f0);
-  box-shadow: 0 6px 18px rgba(139,92,246,0.35);
-}
+/* ====== Search Bar (New) ====== */
+#search-bar{
+  width:100%;
+  max-width:400px;
+  margin-bottom:32px;
+  padding:12px 18px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.14);
+  background:var(--bg-alt);
+  color:var(--text);
+  font-size:1rem;
