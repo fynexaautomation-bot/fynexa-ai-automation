@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerold - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #0a0f1f; /* dark navy background */
+      color: #e5e7eb;
+    }
+    .highlight {
+      color: #3b82f6; /* Tailwind blue-500 */
+    }
+    .card {
+      background: #111827;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body class="font-sans">
+
+  <!-- Hero -->
+  <section class="text-center py-16">
+    <img src="assets/profile.jpg" alt="Profile" class="w-40 h-40 rounded-full mx-auto mb-6 shadow-lg">
+    <h1 class="text-4xl font-bold">I am Gerold</h1>
+    <h2 class="text-2xl mt-2"><span class="highlight">Web Developer</span> + <span class="highlight">UX Designer</span></h2>
+    <p class="mt-4 text-gray-400 max-w-xl mx-auto">
+      I break down complex user experience problems to create integrity-focused solutions.
+    </p>
+    <div class="flex justify-center gap-8 mt-8 text-gray-300">
+      <div><span class="text-2xl font-bold highlight">14</span><br>Years Experience</div>
+      <div><span class="text-2xl font-bold highlight">50+</span><br>Projects</div>
+      <div><span class="text-2xl font-bold highlight">1.5k</span><br>Github Stars</div>
+      <div><span class="text-2xl font-bold highlight">14</span><br>Awards</div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10 highlight">My Quality Services</h2>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="card">
+        <h3 class="font-bold text-xl mb-2">Branding Design</h3>
+        <p class="text-gray-400">I create consistent visual identities that resonate with your target audience.</p>
+      </div>
+      <div class="card">
+        <h3 class="font-bold text-xl mb-2">UI/UX Design</h3>
+        <p class="text-gray-400">I craft user interfaces with smooth experiences to keep users engaged.</p>
+      </div>
+      <div class="card">
+        <h3 class="font-bold text-xl mb-2">Web Design</h3>
+        <p class="text-gray-400">Modern responsive websites designed for speed and accessibility.</p>
+      </div>
+      <div class="card">
+        <h3 class="font-bold text-xl mb-2">App Design</h3>
+        <p class="text-gray-400">Mobile-first designs tailored for iOS and Android applications.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Works -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10 highlight">My Recent Works</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="card"><img src="assets/project1.png" alt=""></div>
+      <div class="card"><img src="assets/project2.png" alt=""></div>
+      <div class="card"><img src="assets/project3.png" alt=""></div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section class="py-16 px-6 max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+    <div>
+      <h2 class="text-2xl font-bold mb-6 highlight">My Experience</h2>
+      <ul class="space-y-4">
+        <li class="card">2021 - Lead Developer</li>
+        <li class="card">2019-2021 - Full Stack Web Developer</li>
+        <li class="card">2017-2019 - UI Designer</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold mb-6 highlight">My Education</h2>
+      <ul class="space-y-4">
+        <li class="card">2020 - Programming Course</li>
+        <li class="card">2018 - Graphic Design Course</li>
+        <li class="card">2016 - Web Design College</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-10 highlight">My Skills</h2>
+    <div class="flex flex-wrap justify-center gap-6">
+      <span class="card">HTML</span>
+      <span class="card">CSS</span>
+      <span class="card">JavaScript</span>
+      <span class="card">React</span>
+      <span class="card">WordPress</span>
+      <span class="card">Figma</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10 highlight">Let’s Work Together</h2>
+    <form class="card max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-800 text-white">
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-800 text-white">
+      <textarea placeholder="Your Message" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
+      <button class="w-full bg-blue-600 hover:bg-blue-700 p-3 rounded text-white font-bold">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-gray-500">
+    © 2025 Gerold. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
