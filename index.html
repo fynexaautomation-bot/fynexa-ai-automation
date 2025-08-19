@@ -1,21 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fynexa AI Automation</title>
-  <meta name="description" content="AI automations that help small businesses save time and grow" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="AI automations that help small businesses save time and grow">
+  <meta property="og:title" content="Fynexa AI Automation">
+  <meta property="og:description" content="AI automations that help small businesses save time and grow">
+  <meta property="og:image" content="https://yourusername.github.io/your-repo/assets/fynexa-logo-white.png">
+  <meta property="og:url" content="https://yourusername.github.io/your-repo">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://yourusername.github.io/your-repo">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="assets/fynexa-logo-white.png" as="image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
   <header class="site-header">
-    <a class="logo" href="/">
-  <img src="assets/fynexa-logo-white.png" alt="Fynexa Logo" style="height:60px;">
-</a>
-    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav class="site-nav" aria-label="Primary">
+    <a class="logo" href="/" aria-label="Fynexa AI Automation Home">
+      <picture>
+        <source srcset="assets/fynexa-logo-white.webp" type="image/webp">
+        <img src="assets/fynexa-logo-white.png" alt="Fynexa AI Automation Logo" width="120" height="60">
+      </picture>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+    <nav class="site-nav" id="primary-nav" aria-label="Primary">
       <a href="index.html" class="active">Home</a>
       <a href="services.html">Services</a>
       <a href="education.html">Education</a>
@@ -23,27 +37,27 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <!-- HERO -->
     <section class="section hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <h1>Supercharge Your Workflow with AI Automation, Built for Small Businesses.</h1>
-          <p class="sub">At Fynexa, we build custom AI automations that streamline repetitive tasks, so you can focus on growing your business instead of drowning in busywork</p>
+          <h1>Supercharge Your Workflow with AI Automation</h1>
+          <p class="sub">Custom AI solutions to streamline repetitive tasks, so small businesses can focus on growth, not busywork.</p>
           <div class="cta-row">
             <a class="btn btn-primary" href="contact.html">Get a Free Automation</a>
             <a class="btn btn-ghost" href="education.html">Learn about AI</a>
           </div>
-          <ul class="stats">
-            <li><strong>5+</strong><span>Automations Built</span></li>
-            <li><strong>50+</strong><span>Hours saved / mo (avg)</span></li>
-            <li><strong>3+</strong><span>Small businessess</span></li>
-          </ul>
+          <dl class="stats">
+            <dt>5+</dt><dd>Automations Built</dd>
+            <dt>50+</dt><dd>Hours Saved/Mo (Avg)</dd>
+            <dt>3+</dt><dd>Small Businesses</dd>
+          </dl>
         </div>
         <div class="hero-card">
           <div class="glass">
-            <h3>“Set it and sell.”</h3>
-            <p>Your leads get instant replies, auto‑qualified, and booked on your calendar. You get time back.</p>
+            <h2>“Set it and sell.”</h2>
+            <p>Instant replies, auto-qualified leads, and automated bookings—saving you time to focus on closing deals.</p>
             <a class="chip" href="services.html">See what’s included →</a>
           </div>
         </div>
@@ -53,62 +67,62 @@
     <!-- SERVICES SNAPSHOT -->
     <section class="section">
       <div class="container">
-        <h2 class="section-title">What I automate</h2>
-        <div class="grid cards-3">
+        <h2 class="section-title">What We Automate</h2>
+        <div class="grid grid--3">
           <article class="card">
             <h3>Lead Capture & Auto-Response</h3>
             <ul class="ticks">
               <li>Instantly capture leads from forms, social media, or your website.</li>
-              <li>Send them an automatic, personalized email/text within seconds.</li>
+              <li>Send personalized email/text replies within seconds.</li>
             </ul>
           </article>
           <article class="card">
             <h3>Appointment Booking & Calendar Sync</h3>
             <ul class="ticks">
               <li>Automate scheduling with Google Calendar/Outlook.</li>
-              <li>Clients pick a time, it auto-updates your calendar, and sends confirmations + reminders.</li>
+              <li>Clients pick times, calendars update, and reminders are sent.</li>
             </ul>
           </article>
           <article class="card">
             <h3>Follow-Up Drip Campaigns</h3>
             <ul class="ticks">
-              <li>Automatically send a sequence of follow-up emails or texts.</li>
-              <li>Nurture leads, onboard new customers, or request reviews—without lifting a finger.</li>
+              <li>Auto-send follow-up emails or texts.</li>
+              <li>Nurture leads or request reviews effortlessly.</li>
             </ul>
           </article>
           <article class="card">
             <h3>Social Media Posting & Content Scheduling</h3>
             <ul class="ticks">
               <li>Auto-schedule posts across Instagram, LinkedIn, X, and Facebook.</li>
-              <li>Repurpose your content so you don’t have to post manually.</li>
+              <li>Repurpose content to save time.</li>
             </ul>
           </article>
           <article class="card">
             <h3>Document & Contract Automation</h3>
             <ul class="ticks">
-              <li>Automatically generate proposals, contracts, or invoices.</li>
-              <li>Send them for e-signature as soon as a client says “yes.”</li>
+              <li>Generate proposals, contracts, or invoices automatically.</li>
+              <li>Send for e-signature instantly.</li>
             </ul>
           </article>
           <article class="card">
             <h3>Customer Support Chatbot</h3>
             <ul class="ticks">
-              <li>AI chatbot answers FAQs on your website 24/7.</li>
-              <li>Routes important inquiries to your inbox/CRM instantly.</li>
+              <li>24/7 AI chatbot answers FAQs on your website.</li>
+              <li>Routes key inquiries to your inbox/CRM.</li>
             </ul>
           </article>
           <article class="card">
             <h3>Data Entry & CRM Updates</h3>
             <ul class="ticks">
-              <li>Auto-send new leads, payments, or form responses into your CRM or Google Sheets.</li>
-              <li>Keep everything organized without manual work.</li>
+              <li>Auto-sync leads, payments, or forms to your CRM or Google Sheets.</li>
+              <li>Stay organized without manual work.</li>
             </ul>
           </article>
           <article class="card">
             <h3>Review & Feedback Requests</h3>
             <ul class="ticks">
-              <li>After a purchase or appointment, send automatic review requests.</li>
-              <li>Collect testimonials to build credibility.</li>
+              <li>Send automatic review requests post-purchase.</li>
+              <li>Collect testimonials to boost credibility.</li>
             </ul>
           </article>
         </div>
@@ -118,30 +132,30 @@
     <!-- CASE STUDIES -->
     <section class="section section-alt">
       <div class="container">
-        <h2 class="section-title">New Topics</h2>
-        <div class="grid cards-3">
+        <h2 class="section-title">Case Studies</h2>
+        <div class="grid grid--3">
           <article class="case">
             <header>
               <span class="tag">Follow‑ups</span>
-              <h3>5 hrs/week saved with auto‑texts</h3>
+              <h3>5 Hours/Week Saved</h3>
             </header>
-            <p>Lead replies went from “sometimes next day” to **under 3 minutes**. Showings booked without manual back‑and‑forth.</p>
+            <p>Lead replies went from next-day to under 3 minutes. Showings booked without manual effort.</p>
             <footer><a href="education.html#module2" class="chip">Read more →</a></footer>
           </article>
           <article class="case">
             <header>
               <span class="tag">Scheduling</span>
-              <h3>Zero double‑booking</h3>
+              <h3>Zero Double-Bookings</h3>
             </header>
-            <p>Calendar holds + reminder flows cut no‑shows by 28% in the first month.</p>
+            <p>Calendar holds and reminders cut no-shows by 28% in the first month.</p>
             <footer><a href="education.html#module3" class="chip">Read more →</a></footer>
           </article>
           <article class="case">
             <header>
               <span class="tag">Listings</span>
-              <h3>Descriptions in 90 seconds</h3>
+              <h3>Descriptions in 90 Seconds</h3>
             </header>
-            <p>Template‑driven, MLS‑safe copy that matches agent voice. Social snippets included.</p>
+            <p>Template-driven, MLS-safe copy matching your voice, with social snippets included.</p>
             <footer><a href="education.html#module4" class="chip">Read more →</a></footer>
           </article>
         </div>
@@ -152,17 +166,17 @@
     <section class="section">
       <div class="container">
         <h2 class="section-title">Testimonials</h2>
-        <div class="grid cards-3">
+        <div class="grid grid--3">
           <blockquote class="quote">
-            <p>“He’s a hardworking guy who’s new to AI automation, but it feels like he’s been doing it for years. Always learning, always improving.”</p>
+            <p>“A hardworking professional who’s new to AI but feels like a veteran. Always improving.”</p>
             <cite>— Michael</cite>
           </blockquote>
           <blockquote class="quote">
-            <p>“What surprised me most was how much he knows already, and the fact that he’s building automations for free. That’s rare”</p>
+            <p>“His knowledge and free automations are unmatched. Truly impressive.”</p>
             <cite>— Samantha</cite>
           </blockquote>
           <blockquote class="quote">
-            <p>“Always willing to help, always quick to respond. I honestly couldn’t believe this level of support was free.”</p>
+            <p>“Quick responses and incredible support—for free. Unbelievable value.”</p>
             <cite>— Daniel</cite>
           </blockquote>
         </div>
@@ -173,8 +187,8 @@
     <section class="section sticky-cta">
       <div class="container flex-between">
         <div>
-          <h3>Let’s Build Your First Automation (Free)</h3>
-          <p>No credit card. Real workflow. Real time saved.</p>
+          <h2>Build Your First Automation (Free)</h2>
+          <p>No credit card. Real workflows. Real time saved.</p>
         </div>
         <a class="btn btn-primary" href="contact.html">Book Now</a>
       </div>
@@ -192,13 +206,12 @@
         <a href="contact.html">Contact</a>
       </nav>
       <div class="social">
-        <a href="#" aria-label="Twitter">X</a>
+        <a href="https://x.com/yourhandle" aria-label="Follow us on X" rel="noopener">X</a>
       </div>
     </div>
-    <p class="copyright">© <span id="y"></span> Praise — All rights reserved.</p>
+    <p class="copyright">© <span id="y">2025</span> Praise — All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-
