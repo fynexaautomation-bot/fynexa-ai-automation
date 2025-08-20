@@ -11,7 +11,6 @@ if (toggle && nav) {
 const y = document.getElementById('y');
 if (y) y.textContent = new Date().getFullYear();
 
-<script>
   const track = document.querySelector('.carousel-track');
   const slides = Array.from(track.children);
   const nextBtn = document.querySelector('.carousel-btn.next');
@@ -29,4 +28,3 @@ if (y) y.textContent = new Date().getFullYear();
 
   // autoplay
   setInterval(() => showSlide(index + 1), 5000);
-</script>
