@@ -110,7 +110,7 @@ body{
   justify-content: flex-start;
   width:100%;
   max-width: 360px;  /* fixed width to make multiple cards per row */
-  min-height: 480px; /* vertically stretched, taller than square */
+  min-height: 400px; /* vertically stretched, taller than square */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
